@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kopi Toraja - Toko Online Kopi Asli Toraja</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f7f1;
+      color: #333;
+      background-image: url('https://i.ibb.co/Fm3Bv5F/toraja-pattern.png'); /* ukiran etnik Toraja */
+      background-repeat: repeat;
+      background-size: 150px 150px;
+    }
+    header {
+      background-color: #6b4f4fcc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 3px #3a1f1f;
+    }
+    nav {
+      background-color: #a97474cc;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d4b999;
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px 40px 15px;
+      position: relative;
+      z-index: 2;
+      background: #fff9f4cc;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(107, 79, 79, 0.2);
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #6b4f4f;
+    }
+    .intro h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .coffee-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .coffee-card:hover {
+      transform: scale(1.05);
+    }
+    .coffee-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-bottom: 4px solid #6b4f4f;
+    }
+    .coffee-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .coffee-content h3 {
+      margin: 0 0 10px 0;
+      color: #6b4f4f;
+    }
+    .coffee-content p {
+      margin: 5px 0;
+      font-size: 0.95em;
+      line-height: 1.3em;
+    }
+    .order-section {
+      padding: 0 15px 15px 15px;
+      text-align: center;
+    }
+    .order-section input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      font-size: 1em;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .order-section button {
+      background-color: #6b4f4f;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .order-section button:hover {
+      background-color: #543b3b;
+    }
+    footer {
+      background-color: #6b4f4fcc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      position: relative;
+      z-index: 2;
+    }
+    @media(max-width: 650px) {
+      .catalog {
+        flex-direction: column;
+        align-items: center;
+      }
+      .coffee-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kopi Toraja</h1>
+    <p>Toko Online Kopi Asli Toraja, Nikmati Rasa Otentik dari Pegunungan Sulawesi</p>
+  </header>
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#catalog">Katalog Kopi</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+  <main>
+    <section class="intro" id="home">
+      <h2>Selamat Datang di Toko Kopi Toraja</h2>
+      <p>Kami menyediakan berbagai macam kopi asli Toraja berkualitas premium langsung dari petani lokal.</p>
+    </section>
+    <section class="catalog" id="catalog">
+
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Kopi Toraja Arabica Gayo" />
+        <div class="coffee-content">
+          <h3>Kopi Toraja Arabica Gayo</h3>
+          <p><b>Asal:</b> Toraja, Sulawesi Selatan</p>
+          <p><b>Rasa:</b> Cenderung asam dengan aroma bunga dan buah-buahan</p>
+          <p><b>Tingkat roasting:</b> Medium</p>
+          <p><b>Cocok untuk:</b> Espresso dan pour-over</p>
+        </div>
+        <div class="order-section">
+          <input type="number" min="1" value="1" id="qty-arabica-gayo" />
+          <button onclick="orderWhatsApp('Kopi Toraja Arabica Gayo', document.getElementById('qty-arabica-gayo').value)">Masukkan Keranjang</button>
+        </div>
+      </div>
+
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Kopi Toraja Kalosi" />
+        <div class="coffee-content">
+          <h3>Kopi Toraja Kalosi</h3>
+          <p><b>Asal:</b> Kalosi, Toraja</p>
+          <p><b>Rasa:</b> Kental, sedikit rasa cokelat dan rempah</p>
+          <p><b>Tingkat roasting:</b> Dark</p>
+          <p><b>Cocok untuk:</b> Espresso, French press</p>
+        </div>
+        <div class="order-section">
+          <input type="number" min="1" value="1" id="qty-kalosi" />
+          <button onclick="orderWhatsApp('Kopi Toraja Kalosi', document.getElementById('qty-kalosi').value)">Masukkan Keranjang</button>
+        </div>
+      </div>
+
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1510626176961-4b37b289bc0a?auto=format&fit=crop&w=400&q=80" alt="Kopi Toraja Puntang" />
+        <div class="coffee-content">
+          <h3>Kopi Toraja Puntang</h3>
+          <p><b>Asal:</b> Toraja Puntang</p>
+          <p><b>Rasa:</b> Balance, dengan sentuhan rasa kacang dan karamel</p>
+          <p><b>Tingkat roasting:</b> Medium-dark</p>
+          <p><b>Cocok untuk:</b> Drip coffee, moka pot</p>
+        </div>
+        <div class="order-section">
+          <input type="number" min="1" value="1" id="qty-puntang" />
+          <button onclick="orderWhatsApp('Kopi Toraja Puntang', document.getElementById('qty-puntang').value)">Masukkan Keranjang</button>
+        </div>
+      </div>
+
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1466979939565-1313f0b4d660?auto=format&fit=crop&w=400&q=80" alt="Kopi Toraja Batang Toru" />
+        <div class="coffee-content">
+          <h3>Kopi Toraja Batang Toru</h3>
+          <p><b>Asal:</b> Batang Toru, Sulawesi</p>
+          <p><b>Rasa:</b> Fruity dan floral dengan aftertaste manis</p>
+          <p><b>Tingkat roasting:</b> Light-medium</p>
+          <p><b>Cocok untuk:</b> V60, Aeropress</p>
+        </div>
+        <div class="order-section">
+          <input type="number" min="1" value="1" id="qty-batang-toru" />
+          <button onclick="orderWhatsApp('Kopi Toraja Batang Toru', document.getElementById('qty-batang-toru').value)">Masukkan Keranjang</button>
+        </div>
+      </div>
+
+      <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Kopi Toraja Sulawesi" />
+        <div class="coffee-content">
+          <h3>Kopi Toraja Sulawesi</h3>
+          <p><b>Asal:</b> Sulawesi Selatan</p>
+          <p><b>Rasa:</b> Earthy dan herbal, sedikit smoky</p>
+          <p><b>Tingkat roasting:</b> Medium</p>
+          <p><b>Cocok untuk:</b> Espresso, cold brew</p>
+        </div>
+        <div class="order-section">
+          <input type="number" min="1" value="1" id="qty-sulawesi" />
+          <button onclick="orderWhatsApp('Kopi Toraja Sulawesi', document.getElementById('qty-sulawesi').value)">Masukkan Keranjang</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" style="text-align:center; margin: 50px 0;">
+      <h2>Kontak Kami</h2>
+      <p>Email: info@kopitoraja.com</p>
+      <p>Telepon: +62 812-3456-7890</p>
+      <p>Alamat: Jalan Kopi No. 123, Toraja, Sulawesi Selatan</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Kopi Toraja. Semua hak cipta dilindungi.
+  </footer>
+
+  <script>
+    function orderWhatsApp(coffeeType, quantity) {
+      if(quantity < 1) {
+        alert('Jumlah pesanan minimal 1');
+        return;
+      }
+      const phone = '6282191302790'; // nomor WA tanpa 0 diawal, pakai kode negara
+      const message = `Halo, saya ingin memesan:\n- ${coffeeType} sebanyak ${quantity} bungkus.\nMohon informasi lebih lanjut. Terima kasih!`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
